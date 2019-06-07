@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    DocumentRoot "D:\webroot\XXX"
+    ServerName www.XXX
+    ServerAlias XXX
+  <Directory "D:\webroot\XXX">
+      Options FollowSymLinks ExecCGI
+      AllowOverride All
+      Order allow,deny
+      Allow from all
+      Require all granted
+  </Directory>
+</VirtualHost>

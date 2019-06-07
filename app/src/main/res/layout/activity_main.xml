@@ -14,4 +14,9 @@
         android:id="@+id/generate_config"
         style="@style/style_function_btn"
         android:text="@string/generate_config" />
+
+    <Button
+        android:id="@+id/generate_vhost"
+        style="@style/style_function_btn"
+        android:text="@string/generate_vhost" />
 </LinearLayout>

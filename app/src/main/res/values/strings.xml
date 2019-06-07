@@ -2,4 +2,5 @@
     <string name="app_name">DomainsAutomatic</string>
     <string name="filter_domains">网址提取</string>
     <string name="generate_config">生成config文件</string>
+    <string name="generate_vhost">生成vhost文件</string>
 </resources>
