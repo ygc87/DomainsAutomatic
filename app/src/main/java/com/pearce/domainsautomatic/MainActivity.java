@@ -18,7 +18,12 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.filter_domains, R.id.generate_config, R.id.generate_vhost})
+    @OnClick({R.id.filter_domains,
+            R.id.generate_config,
+            R.id.generate_vhost,
+            R.id.filter,
+            R.id.generate_backup,
+            R.id.combine})
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.filter_domains:
@@ -29,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.generate_vhost:
                 AssetManagerUtils.generateVHost(this);
+                break;
+            case R.id.generate_backup:
+                AssetManagerUtils.generateBackup(this);
+                break;
+            case R.id.filter:
+                AssetManagerUtils.filter(this, "fdafdsf");
+                break;
+            case R.id.combine:
+                AssetManagerUtils.combine(this, ",");
                 break;
         }
     }
